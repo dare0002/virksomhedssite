@@ -1,0 +1,136 @@
+/* Navbar stilarter */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+.right-menu {
+  display: flex;
+  align-items: center;
+}
+
+.right-menu div {
+  margin-left: 20px;
+}
+
+/* Responsivt design (for eksempel til mobilvisning) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .right-menu {
+    margin-top: 10px;
+  }
+
+  .right-menu div {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+
+/* Dropdown-menu stilarter */
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 171%;
+  left: -28px;
+  background-color: #fff;
+  border-top: #eeeeee solid 1px;
+  border-bottom: #eeeeee solid 1px;
+  padding: 40px 684px;
+  padding-left: 30px;
+}
+
+.dropdown-menu.active {
+  display: block;
+  width: 1207px;
+  height: 192.817px;
+  padding-right: 199px;
+}
+
+.dropdown-column {
+  float: left;
+  width: 15%;
+}
+
+.dropdown-column h3 {
+  margin-top: 0;
+}
+
+.dropdown-column a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 0.8rem;
+}
+
+/* Styling af "Shop"-link */
+.dropdown-link {
+  text-decoration: none;
+  position: relative;
+}
+
+.dropdown-link:hover,
+.dropdown-link:active {
+  text-decoration: none;
+}
+
+/* Understregning under "Shop"-link */
+.dropdown-link:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #000; /* Farve på understregningen */
+  position: absolute;
+  bottom: -3px; /* Afstand fra bunden af linket */
+  transition: width 0.3s ease; /* Overgangseffekt */
+}
+
+.dropdown-link:hover:after,
+.dropdown-link:active:after {
+  width: 100%; /* Vis hele bredden af linket */
+}
