@@ -3,3 +3,16 @@ h1 {
   font-weight: 300;
   font-style: normal;
 }
+img {
+  width: 100%;
+}
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid_1_1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-family: "futura-pt";
+  margin-left: 70px;
+}
