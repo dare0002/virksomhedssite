@@ -8,76 +8,134 @@
 
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="https://use.typekit.net/alu1hko.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 </head>
 
 <body>
 
-    <!-- MENU -->
-    <nav class="navbar">
-        <ul class="left-menu">
-            <li class="dropdown">
-                <a href="#" class="dropdown-link">Shop</a>
-                <div class="dropdown-menu">
-                    <div class="dropdown-column">
-                        <h3>NYHEDER</h3>
-                        <a href="#">Alle Produkter</a>
-                        <a href="#">Nyheder</a>
-                        <a href="#">Populære styles</a>
-                        <a href="#">Gaveidéer</a>
-                    </div>
-                    <div class="dropdown-column">
-                        <h3>TØJ</h3>
-                        <a href="#">Alle Produkter</a>
-                        <a href="#">T-shirts</a>
-                        <a href="#">Sweatshirts</a>
-                        <a href="#">Sweatpants & Shorts</a>
-                    </div>
-                    <div class="dropdown-column">
-                        <h3>ACCESORIES</h3>
-                        <a href="#">Alle Produkter</a>
-                        <a href="#">Kasketter & Huer</a>
-                        <a href="#">Tørklæder & Handsker</a>
-                        <a href="#">Tasker</a>
-                    </div>
-                    <div class="dropdown-column">
-                        <h3>BØRNETØJ</h3>
-                        <a href="#">Alle Produkter</a>
-                        <a href="#">T-shirts</a>
-                        <a href="#">Sweatshirts</a>
-                        <a href="#">Sweatpants & Shorts</a>
-                    </div>
-                    <div class="dropdown-column">
-                        <img src="billeder/menu_img_1.jpg" alt="tøj">
-                    </div>
-                    <div class="dropdown-column">
-                        <img src="billeder/menu_img_2.jpg" alt="tøj">
-                    </div>
+    <header>
+
+        <!-- ØVERSTE BAR -->
+        <div class="header_text">
+            <p class="header_text">FRI FRAGT OVER 300KR. I GRATIS RETUR I PAKKEN SENDES INDE FOR 3 DAGE </p>
+        </div>
+
+        <!-- MENU -->
+        <nav class="navbar">
+            <ul class="left-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-link">Shop</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-column">
+                            <h3>NYHEDER</h3>
+                            <a href="#">Alle Produkter</a>
+                            <a href="#">Nyheder</a>
+                            <a href="#">Populære styles</a>
+                            <a href="#">Gaveidéer</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3>TØJ</h3>
+                            <a href="#">Alle Produkter</a>
+                            <a href="#">T-shirts</a>
+                            <a href="#">Sweatshirts</a>
+                            <a href="#">Sweatpants & Shorts</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3>ACCESORIES</h3>
+                            <a href="#">Alle Produkter</a>
+                            <a href="#">Kasketter & Huer</a>
+                            <a href="#">Tørklæder & Handsker</a>
+                            <a href="#">Tasker</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3>BØRNETØJ</h3>
+                            <a href="#">Alle Produkter</a>
+                            <a href="#">T-shirts</a>
+                            <a href="#">Sweatshirts</a>
+                            <a href="#">Sweatpants & Shorts</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <img src="billeder/menu_img_1.jpg" alt="tøj">
+                        </div>
+                        <div class="dropdown-column">
+                            <img src="billeder/menu_img_2.jpg" alt="tøj">
+                        </div>
 
 
+                    </div>
+                </li>
+                <li><a href="#">Community</a></li>
+                <li><a href="omos.html">Om os</a></li>
+                <li><a href="#">Gavekort</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="logo">
+                <a href="index.html"><img src="path/to/your/logo.png" alt="Logo"></a>
+            </div>
+            <div class="right-menu">
+                <div class="icon">
+                    <iconify-icon icon="iconamoon:search-thin"></iconify-icon>
                 </div>
-            </li>
-            <li><a href="#">Community</a></li>
-            <li><a href="omos.html">Om os</a></li>
-            <li><a href="#">Gavekort</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-        </ul>
-        <div class="logo">
-            <a href="index.html"><img src="path/to/your/logo.png" alt="Logo"></a>
+                <div class="icon">
+                    <iconify-icon icon="ph:heart-thin"></iconify-icon>
+                </div>
+                <div class="icon" id="cart">
+                    <iconify-icon icon="ph:shopping-cart-thin"></iconify-icon>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- BURGERMENU -->
+        <nav class="navbar2">
+            <div id="burger-menu" class="flex_item">
+                <div class="burger-icon">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="omos.html">Om os</a></li>
+                <li><a href="#">Gavekort</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="flex_item">
+                <a href="index.html"><img src="path/to/your/logo.png" alt="Logo" id="logo_burger"></a>
+            </div>
+            <div class="flex_item">
+                <div class="cart-icon">
+                    <iconify-icon icon="ph:shopping-cart-thin"></iconify-icon>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="brodkrumme">
+            <div>
+                <p> FORSIDE / TØJ / ALLE PRODUKTER </p>
+            </div>
+
+            <div>
+                <p> FILTRER OG SORTER </p>
+            </div>
+            <div>
+
+            </div>
         </div>
-        <div class="right-menu">
-            <div class="search-icon">
-                <img src="path/to/search-icon.png" alt="Search">
-            </div>
-            <div class="favorite-icon">
-                <img src="path/to/favorite-icon.png" alt="Favorite">
-            </div>
-            <div class="cart-icon">
-                <img src="path/to/cart-icon.png" alt="Cart">
-            </div>
-        </div>
-    </nav>
+
+    </main>
 
     <script src="javascript/menu.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
 </body>
 

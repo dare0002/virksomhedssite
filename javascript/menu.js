@@ -19,3 +19,14 @@ dropdownLinks.forEach((link) => {
     }
   });
 });
+
+// BURGERMENU
+// Find burgermenu og menu-links
+const burgerMenu = document.querySelector("#burger-menu");
+const menuLinks = document.querySelector(".menu-links");
+
+// Tilføj eventlistener til burgermenuen for at åbne/lukke menuen
+burgerMenu.addEventListener("click", function () {
+  menuLinks.classList.toggle("active");
+  burgerMenu.querySelector(".burger-icon").classList.toggle("active");
+});
