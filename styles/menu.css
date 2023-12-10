@@ -202,6 +202,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  margin: 2px 8px;
 }
 
 .line {
@@ -239,6 +240,11 @@ a {
     cursor: pointer;
   }
 
+  #logo_burger {
+    position: absolute;
+    left: 46%;
+  }
+
   .navbar2 {
     padding-top: 10px;
   }
@@ -268,16 +274,17 @@ a {
     align-items: center;
     background-color: #ffffff;
     color: #000000;
-    padding: 10px 20px;
+    padding: 66px 88px 350px 20px;
     font-family: "futura-pt", sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 3rem;
     width: 100%;
   }
 
   /* Burger-ikon animation til at vise åben/lukket tilstand */
   .burger-icon.active .line-1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-6px, 7px);
   }
 
   .burger-icon.active .line-2 {
@@ -285,6 +292,14 @@ a {
   }
 
   .burger-icon.active .line-3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-6px, -7px);
+  }
+
+  .flex_item.active {
+    display: none;
+  }
+
+  .cart-icon.active {
+    display: none;
   }
 }

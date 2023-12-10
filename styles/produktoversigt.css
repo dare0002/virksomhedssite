@@ -1,0 +1,71 @@
+p {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.5rem;
+}
+
+#filt {
+  width: 70px;
+  margin-top: 3.5px;
+}
+
+#brod {
+  width: 115px;
+  position: absolute;
+  margin-top: 3.5px;
+}
+
+.brodkrumme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 25px 10px;
+  justify-content: end;
+}
+
+.firkanter {
+  width: 33px;
+}
+
+.brodkrumme_right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+  gap: 0;
+  margin-left: 291px;
+}
+
+.farver {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4px;
+  width: 4%;
+  margin: 4px 2px;
+}
+
+.produkt_img {
+  width: 100%;
+}
+
+.produktnavn {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 2px;
+}
+
+.pris {
+  font-size: 0.7rem;
+  font-weight: 300;
+  margin: 2px;
+}
+
+.plus {
+  margin-top: 3px;
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
