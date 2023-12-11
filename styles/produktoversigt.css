@@ -69,3 +69,50 @@ p {
   gap: 20px;
   width: 100%;
 }
+
+.brodkrumme_web {
+  display: none;
+}
+
+.grid_1_1_1_1 {
+  display: none;
+}
+
+@media screen and (min-width: 920px) {
+  .grid_1_1 {
+    display: none;
+  }
+
+  .brodkrumme {
+    display: none;
+  }
+
+  .brodkrumme_web {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #filt {
+    font-size: 0.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 730px;
+    margin-right: 18px;
+  }
+
+  #brod {
+    position: relative;
+    right: -20px;
+    font-size: 0.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .grid_1_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    padding: 1px 20px;
+  }
+}

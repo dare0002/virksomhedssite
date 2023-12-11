@@ -70,8 +70,8 @@
   background-color: white;
   color: #000000;
   cursor: pointer;
-  width: 100%;
-  padding: 5px 22px 0px 3px;
+  width: 90%;
+  padding: 5px 20px 0px 3px;
   border: none;
   font-weight: 100;
   font-size: 1.4rem;
@@ -85,7 +85,7 @@
   display: flex;
   position: absolute;
   top: 41px;
-  right: -23px;
+  right: 0;
 }
 
 /* Dropdown-menu stilarter */
