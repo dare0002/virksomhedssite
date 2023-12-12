@@ -218,7 +218,7 @@ a {
 }
 
 /* Vis burgermenuen ved max-bredde (mobilvisning) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .navbar {
     display: none;
   }
@@ -241,7 +241,8 @@ a {
 
   #logo_burger {
     position: absolute;
-    left: 46%;
+    left: 44%;
+    width: 50px;
   }
 
   .navbar2 {
