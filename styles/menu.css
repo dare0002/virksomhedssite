@@ -114,9 +114,10 @@
 }
 
 .menu_img {
-  width: 83%;
-  padding-left: 10px;
+  width: 137%;
+  padding-left: 93px;
 }
+
 .dropdown-column {
   float: left;
   width: 15%;
@@ -147,7 +148,7 @@ a:hover {
   color: var(--gron);
 }
 
-/* Styling af "Shop"-link */
+/* Styling af "dropdown"-link */
 .dropdown-link {
   text-decoration: none;
   position: relative;
@@ -159,21 +160,21 @@ a:hover {
   color: var(--gron);
 }
 
-/* Understregning under "Shop"-link */
+/* Understregning under "dropdown-link"-link */
 .dropdown-link:after {
   content: "";
   display: block;
   width: 0;
   height: 2px;
-  background-color: var(--gron); /* Farve på understregningen */
+  background-color: var(--gron);
   position: absolute;
-  bottom: -3px; /* Afstand fra bunden af linket */
-  transition: width 0.3s ease; /* Overgangseffekt */
+  bottom: -3px;
+  transition: width 0.3s ease;
 }
 
 .dropdown-link:hover:after,
 .dropdown-link:active:after {
-  width: 100%; /* Vis hele bredden af linket */
+  width: 100%;
 }
 
 .dropdown-link.active:after {
