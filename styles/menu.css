@@ -33,10 +33,11 @@
   align-items: center;
   background-color: #ffffff;
   color: #000000;
-  padding: 20px 20px 10px 20px;
+  padding: 35px 20px 30px 20px;
   font-family: "futura-pt", sans-serif;
   font-weight: 300;
   font-style: normal;
+  width: 100%;
 }
 
 .navbar ul {
@@ -62,8 +63,9 @@
 .logo img {
   display: block;
   position: absolute;
-  left: 49%;
+  left: 48%;
   top: 48px;
+  width: 50px;
 }
 
 .icon {
@@ -71,7 +73,7 @@
   color: #000000;
   cursor: pointer;
   width: 90%;
-  padding: 5px 20px 0px 3px;
+  padding: 21px 20px 0px 3px;
   border: none;
   font-weight: 100;
   font-size: 1.4rem;
@@ -97,7 +99,7 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 171%;
+  top: 259%;
   left: -28px;
   background-color: #fff;
   border-top: #eeeeee solid 1px;
