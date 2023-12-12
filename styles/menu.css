@@ -1,14 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gron: #3cb371;
+}
+
+.header_text {
+  width: 100%;
+  padding: 3px 0;
+  margin: 0;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.7rem;
+  text-align: center;
+  color: var(--gron);
+  background-color: #efefef;
+  box-sizing: border-box;
+}
+
 /* Navbar stilarter */
+#burger_menu {
+  display: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
   color: #000000;
-  padding: 10px 20px;
+  padding: 35px 20px 30px 20px;
   font-family: "futura-pt", sans-serif;
   font-weight: 300;
   font-style: normal;
+  width: 100%;
 }
 
 .navbar ul {
@@ -27,35 +56,38 @@
   text-decoration: none;
 }
 
+.navbar a:hover {
+  color: var(--gron);
+}
+
 .logo img {
   display: block;
-  margin: 0 auto;
+  position: absolute;
+  left: 48%;
+  top: 48px;
+  width: 50px;
+}
+
+.icon {
+  background-color: white;
+  color: #000000;
+  cursor: pointer;
+  width: 90%;
+  padding: 21px 20px 0px 3px;
+  border: none;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+
+#cart {
+  margin: 0;
 }
 
 .right-menu {
   display: flex;
-  align-items: center;
-}
-
-.right-menu div {
-  margin-left: 20px;
-}
-
-/* Responsivt design (for eksempel til mobilvisning) */
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .right-menu {
-    margin-top: 10px;
-  }
-
-  .right-menu div {
-    margin-left: 0;
-    margin-right: 10px;
-  }
+  position: absolute;
+  top: 41px;
+  right: 0;
 }
 
 /* Dropdown-menu stilarter */
@@ -67,20 +99,25 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 171%;
+  top: 259%;
   left: -28px;
   background-color: #fff;
   border-top: #eeeeee solid 1px;
   border-bottom: #eeeeee solid 1px;
-  padding: 40px 684px;
+  padding: 60px 684px;
   padding-left: 30px;
 }
 
 .dropdown-menu.active {
   display: block;
-  width: 1207px;
-  height: 192.817px;
+  width: 1448px;
+  height: 324.8px;
   padding-right: 199px;
+}
+
+.menu_img {
+  width: 137%;
+  padding-left: 93px;
 }
 
 .dropdown-column {
@@ -90,6 +127,8 @@
 
 .dropdown-column h3 {
   margin-top: 0;
+  padding-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .dropdown-column a {
@@ -104,10 +143,14 @@ h3 {
 }
 
 a {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
-/* Styling af "Shop"-link */
+a:hover {
+  color: var(--gron);
+}
+
+/* Styling af "dropdown"-link */
 .dropdown-link {
   text-decoration: none;
   position: relative;
@@ -116,21 +159,146 @@ a {
 .dropdown-link:hover,
 .dropdown-link:active {
   text-decoration: none;
+  color: var(--gron);
 }
 
-/* Understregning under "Shop"-link */
+/* Understregning under "dropdown-link"-link */
 .dropdown-link:after {
   content: "";
   display: block;
   width: 0;
   height: 2px;
-  background-color: #000; /* Farve på understregningen */
+  background-color: var(--gron);
   position: absolute;
-  bottom: -3px; /* Afstand fra bunden af linket */
-  transition: width 0.3s ease; /* Overgangseffekt */
+  bottom: -3px;
+  transition: width 0.3s ease;
 }
 
 .dropdown-link:hover:after,
 .dropdown-link:active:after {
-  width: 100%; /* Vis hele bredden af linket */
+  width: 100%;
+}
+
+.dropdown-link.active:after {
+  width: 100%;
+  background-color: #000;
+}
+
+/* BURGERMENU */
+.navbar2 {
+  display: none;
+}
+
+.burger-menu {
+  display: none; /* Skjul burgermenuen som standard */
+  cursor: pointer;
+}
+
+.burger-icon {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 2px 8px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+a {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Vis burgermenuen ved max-bredde (mobilvisning) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar2 {
+    display: flex;
+    width: 100%;
+  }
+
+  .flex_item {
+    flex: 1; /* Flex-grow sat til 1 for at lade dem fylde lige stor plads */
+    text-align: center; /* Justér tekst til centrum */
+  }
+
+  .cart-icon {
+    text-align: end;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  #logo_burger {
+    position: absolute;
+    left: 46%;
+  }
+
+  .navbar2 {
+    padding-top: 10px;
+  }
+
+  .navbar2 ul {
+    list-style-type: none;
+  }
+
+  .navbar2 a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .menu-links {
+    display: none; /* Skjul menu-links (normal navigation) i mobilvisning */
+  }
+
+  .menu-links.active {
+    display: block; /* Vis menu-links, når burgermenuen er åben */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 66px 88px 350px 20px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  /* Burger-ikon animation til at vise åben/lukket tilstand */
+  .burger-icon.active .line-1 {
+    transform: rotate(-45deg) translate(-6px, 7px);
+  }
+
+  .burger-icon.active .line-2 {
+    opacity: 0;
+  }
+
+  .burger-icon.active .line-3 {
+    transform: rotate(45deg) translate(-6px, -7px);
+  }
+
+  .flex_item.active {
+    display: none;
+  }
+
+  .cart-icon.active {
+    display: none;
+  }
 }
