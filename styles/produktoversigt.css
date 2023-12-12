@@ -92,15 +92,15 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 
-  #filt {
+  #filt_web {
     font-size: 0.5rem;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 730px;
-    margin-right: 18px;
+    padding: 20px 0;
+    margin-left: 684px;
+    margin-right: 60px;
+    width: 100%;
   }
 
-  #brod {
+  #brod_web {
     position: relative;
     right: -20px;
     font-size: 0.5rem;
