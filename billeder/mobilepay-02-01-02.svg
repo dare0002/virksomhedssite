@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1502.06 1097.41">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        isolation: isolate;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" x="114.39" y="-65.93" width="1273.28" height="1273.28"/>
+    </clipPath>
+  </defs>
+  <g class="cls-1">
+    <image class="cls-3" width="736" height="736" transform="translate(114.39 -65.93) scale(1.73)" xlink:href="../../../../../Downloads/MobilePay app icon.png"/>
+  </g>
+</svg>
