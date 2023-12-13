@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h3{
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.7rem;
+}
+
+h5 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+h6{
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.login-text #log-in {
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+.kvadrat::before {
+  content: ''; 
+  display: inline-block; 
+  width: 10px; 
+  height: 10px; 
+  background-color: white; 
+  border: 1px solid #000;
+  margin-right: 5px; 
+}
+
+.kvadrat {
+    color: black;
+}
+
+  
+
+/* 1,2,3 step starter */
+
+
+.step-indicator {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.step {
+  flex-grow: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #ddd;
+  position: relative;
+}
+.step.completed {
+  color: #5cb85c;
+  border-color: #5cb85c;
+}
+.step.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.step::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.step.active::before,
+.step.completed::before {
+  background-color: #007bff;
+}
+
+.step-content {
+  text-align: left; 
+  margin-top: 0px; 
+}
+
+
+/* Form-felt starter */
+
+form [name="Levering"]{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  color: #666;
+}
+
+.form-felt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  color: #666;
+}
+
+.form-felt input {
+  width: 100%;
+  height: 40px; 
+  padding: 8px; 
+  margin-bottom: 10px; 
+}
+
+.adresse, .land {
+    grid-column: span 2;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+  width: 100%;
+  margin-top: 1.5px;
+}
+
+main {
+  max-width: 800px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  margin-block: 3rem;
+}
+
+section {
+  display: grid;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Button styling */
+
+
+.green_button {
+  background-color: #4caf50; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.green_button:hover {
+  background-color: #45a049; 
+}

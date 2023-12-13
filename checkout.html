@@ -5,11 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
+    <link rel="stylesheet" href="https://use.typekit.net/alu1hko.css">
+    <link rel="stylesheet" href="styles/checkout.css">
 </head>
 
 <body>
+    <main>
+        <section>
+            <div class="step-indicator">
+                <div class="step active">1</div>
+                <div class="step">2</div>
+                <div class="step">3</div>
+            </div>
+            <div class="step-content">
+                <p>Information</p>
+                <!-- Ytterligare innehåll kan läggas till här för steg 1 -->
+            </div>
 
+            <h3>Kontaktoplysninger</h3>
+            <h5 class="login-text">Har du en konto? <span id="log-in">Log ind</span></h5>
+            <input placeholder="Email" id="email" name="email" type="email">
+            <h6 class="kvadrat">Send mails til mig om nyheder og tilbud</h6>
 
+            <h5>Levering</h5>
+            <form name="Levering">
+                <!-- Formular-indhold -->
+                <div class="form-felt">
+                    <div class="fornavn">
+                        <input placeholder="Fornavn" id="full-name" name="firstName" type="text">
+                    </div>
+                    <div class="efternavn">
+                        <input placeholder="Efternavn" id="lastName" name="lastName" type="text">
+                    </div>
+                    <div class="adresse">
+                        <input placeholder="Adresse" type="text" name="address" id="address">
+                    </div>
+                    <div class="postnummer">
+                        <input placeholder="Postnummer" type="text" name="zipcode" id="zipcode">
+                    </div>
+                    <div class="by">
+                        <input placeholder="By" type="text" name="city" id="city">
+                    </div>
+
+                    <div class="land">
+                        <input placeholder="Land" type="text" name="country" id="country">
+                    </div>
+                    <div class="telefon">
+                        <input placeholder="Telefon" type="text" name="phone" id="phone">
+                    </div>
+                </div> <br><br>
+                <button class="green_button">Leveringsmetode</button>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>

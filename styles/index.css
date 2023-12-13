@@ -1,3 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* Fjern farven */
+a {
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: black; /* Ændr farven til sort eller den ønskede farve */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------Desktop--------------------------------- */
 @media (min-width: 800px) {
   h1 {
     font-family: "futura-pt", sans-serif;
@@ -10,11 +35,494 @@
   .grid_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0;
+    overflow: hidden;
   }
-  .grid_1_1_1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  .hero_txt {
+    font-size: 1.25rem;
+    margin-left: 150px;
+    margin-top: -250px;
+    color: white;
     font-family: "futura-pt";
-    margin-left: 70px;
+  }
+  .shop {
+    font-size: 1.25rem;
+    margin-left: 150px;
+    margin-top: 10px;
+    color: white;
+    font-family: "futura-pt";
+    border: 1px solid white;
+    padding: 8px;
+    padding-right: 70px;
+    padding-left: 70px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .shop:hover {
+    background-color: rgba(219, 224, 226);
+    color: #3cb371;
+  }
+
+  /* ---------------Carousel Desktop------------- */
+  .bestsellers {
+    font-family: "futura-pt";
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-slide {
+    width: 100%;
+    flex: 0 0 25%; /*Tre billeder ved siden af hinanden */
+  }
+
+  .carousel-slide img {
+    width: 99%;
+    height: auto;
+  }
+
+  .custom-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .prev-btn {
+    left: 10px;
+    background-color: white;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+  }
+
+  .next-btn {
+    right: 10px;
+    background-color: white;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+  }
+  .arrow {
+    font-size: 20px;
+  }
+  /* insta billeder desktop */
+  .foelg_os {
+    font-family: "futura-pt";
+    justify-content: center;
+    margin-left: 43%;
+    padding-top: 3rem;
+  }
+
+  .grid_1_1_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 100px;
+    padding-bottom: 5rem;
+    margin-top: 2.5rem;
+  }
+
+  .image_container {
+    position: relative;
+    overflow: hidden;
+  }
+  .image_container img {
+    width: 97%;
+    height: auto;
+    display: block;
+    margin: 2px;
+    margin-bottom: 4px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Ændr gennemsigtigheden her efter behov */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .image_container:hover .overlay {
+    opacity: 1;
+  }
+  .overlay img {
+    width: 50px; /* Ændr størrelsen af Instagram-logoet efter behov */
+    height: auto;
+  }
+
+  /* ---------------------------Footer Desktop------------------------ */
+  .index_grid_1_1_1_1 {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    font-family: "futura-pt";
+    margin-left: 90px;
+    padding-bottom: 2rem;
+    margin-top: 1.5rem;
+  }
+  #fællesskabet {
+    display: none;
+  }
+  .fællesskabet p {
+    line-height: 1.5rem;
+    margin-top: 0.8rem;
+  }
+  .footer_mobil {
+    display: none;
+  }
+  .form_felt input[type="text"] {
+    width: 250px;
+    line-height: 2rem;
+    font-family: "futura-pt";
+  }
+  :placeholder-shown {
+    font-family: "futura-pt";
+  }
+  .Tilmeld {
+    background-color: #3cb371;
+    border-radius: 1px;
+    font-family: "futura-pt";
+    border: none;
+    margin-top: 1.5rem;
+    width: 100px;
+    line-height: 2rem;
+    font-size: 15px;
+    color: white;
+  }
+  hr {
+    margin: 0;
+  }
+  .logoer_uden_tekst {
+    display: none;
+  }
+  #instagram {
+    aspect-ratio: 256/256;
+    width: 5%;
+  }
+  #tiktok {
+    width: 5%;
+  }
+  #facebook {
+    aspect-ratio: 24/24;
+    width: 7%;
+  }
+  ul {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+  li {
+    text-decoration: none;
+    color: black;
+    line-height: 2rem;
+    font-family: "futura-pt";
+  }
+  li a {
+    font-family: "futura-pt";
+  }
+  li h4 {
+    line-height: 1.5rem;
+  }
+  .copyright_desktop {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin-right: 1rem;
+  }
+  .copyright_desktop img {
+    width: 16%;
+    margin-right: 0.5rem;
+  }
+  .copyright_txt_desktop {
+    font-family: "futura-pt";
+    font-size: small;
+    margin-left: 30px;
+    opacity: 60%;
+  }
+  .copyright_mobil {
+    display: none;
+  }
+}
+/* ----------------------------------Mobil--------------------------------- */
+@media (max-width: 768px) {
+  h1 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  img {
+    width: 100%;
+  }
+  /* Hero */
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    /* height: 100%; */
+    margin: 0;
+    /* margin-bottom: 1rem; */
+    overflow: auto;
+  }
+
+  .grid_1_1 img {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .hero_txt {
+    font-size: 15px;
+    position: absolute; /* Positioned absolutely */
+    top: 370px; /*Adjusted from margin-top to center vertically */
+    margin-left: 3.5rem;
+    /* transform: translateY(-10%); Center vertically */
+    color: white;
+    font-family: "futura-pt";
+    font-weight: bold;
+  }
+
+  .shop {
+    font-size: 11px;
+    position: absolute; /* Positioned absolutely */
+    top: 400px; /* Adjusted from margin-top to center vertically */
+    /* transform: translateY(5%); Center vertically */
+    color: white;
+    font-family: "futura-pt";
+    font-weight: bold;
+    margin-left: 3.5rem;
+    border: 1px solid white;
+    padding: 8px;
+    padding-right: 55px;
+    padding-left: 55px;
+    display: inline-block;
+  }
+  .shop:hover {
+    background-color: rgba(219, 224, 226);
+    color: #7da570;
+  }
+  /* --------carousel mobil----------- */
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-slide {
+    width: 100%;
+    flex: 0 0 50%;
+  }
+
+  .carousel-slide img {
+    width: 99%;
+    height: auto;
+  }
+
+  .custom-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .prev-btn {
+    left: 10px;
+    background-color: white;
+    border-radius: 100%;
+  }
+
+  .next-btn {
+    right: 10px;
+    background-color: white;
+    border-radius: 100%;
+  }
+  .arrow {
+    font-size: 15px;
+  }
+  /* ---------Insta mobil---------- */
+  .grid_1_1_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 5rem;
+  }
+  #skjul1,
+  #skjul2,
+  #skjul3,
+  #skjul4 {
+    opacity: 0;
+  }
+  .image_container {
+    position: relative;
+    overflow: hidden;
+  }
+  .image_container img {
+    width: 97%;
+    height: auto;
+    display: block;
+    margin: 3.5px;
+    margin-bottom: 1px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Ændr gennemsigtigheden her efter behov */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .image_container:hover .overlay {
+    opacity: 1;
+  }
+  .overlay img {
+    width: 20px; /* Ændr størrelsen af Instagram-logoet efter behov */
+    height: auto;
+  }
+  /* -------------footer mobil------------*/
+  .index_grid_1_1_1_1 {
+    display: none;
+  }
+  #fællesskabet h4 {
+    font-size: larger;
+    display: inline;
+    font-family: "futura-pt";
+    margin-left: 1rem;
+  }
+  #fællesskabet p {
+    margin-left: 1rem;
+  }
+  #fællesskabet {
+    display: inline;
+  }
+  p {
+    font-family: "futura-pt";
+  }
+  .form_felt {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .form_felt input[type="text"] {
+    width: 400px;
+    line-height: 2rem;
+    font-family: "futura-pt";
+  }
+  :placeholder-shown {
+    font-family: "futura-pt";
+  }
+  .Tilmeld {
+    background-color: #3cb371;
+    color: white;
+    border-radius: 3px;
+    font-family: "futura-pt";
+    border: none;
+    margin-top: 1rem;
+    width: 100px;
+    line-height: 2rem;
+    font-size: 15px;
+  }
+
+  .logoer {
+    display: none;
+  }
+  .logoer_uden_tekst {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 10%;
+    /* margin-left: 50%; */
+    align-items: center;
+    justify-content: center;
+  }
+  .logoer_uden_tekst li {
+    margin: 15%;
+  }
+  #instagram {
+    aspect-ratio: 256/256;
+  }
+  #tiktok {
+    width: 4%;
+    aspect-ratio: 256/256;
+  }
+  #facebook {
+    aspect-ratio: 24/24;
+    width: 50%;
+  }
+  .footer_desktop {
+    display: none;
+  }
+  .footer_mobil {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+    line-height: 1.5rem;
+    font-family: "futura-pt";
+    margin-left: 1rem;
+  }
+  .footer_mobil h4 {
+    white-space: normal;
+  }
+  ul {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  li {
+    text-decoration: none;
+    color: black;
+    line-height: 2rem;
+  }
+  li h4 {
+    line-height: 0;
+    margin-bottom: 1rem;
+  }
+  .copyright_desktop {
+    display: none;
+  }
+  .streg_desktop {
+    display: none;
+  }
+  /* .footer_baggrund_mobil {
+    background-color: #e9e9eb;
+    margin: 0;
+  } */
+  .copyright_mobil {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+  }
+  .copyright_mobil img {
+    width: 12%;
+    margin-left: 1rem;
+  }
+  .copyright_txt_mobil {
+    font-family: "futura-pt";
+    font-size: 0.8rem;
+    opacity: 60%;
+    margin-left: 1rem;
   }
 }
