@@ -62,7 +62,7 @@
     border: 1px solid #ddd;
     position: relative;
     font-family: "futura-pt", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
   }
   .step.completed {
@@ -74,7 +74,7 @@
     color: #fff;
     border-color: #007bff;
     font-family: "futura-pt", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
   }
 
@@ -89,13 +89,16 @@
     transform: translateY(-50%);
     z-index: -1;
     font-family: "futura-pt", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
   }
 
   .step.active::before,
   .step.completed::before {
     background-color: #dbdde0;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
   }
 
   .step-content {
@@ -117,6 +120,9 @@
     color: #666;
     position: relative;
     margin-top: -60px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
   }
 
   /* Form-felt starter */
@@ -241,6 +247,9 @@
     color: #666;
     border: 1px solid #ddd;
     position: relative;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
   }
   .step.completed {
     color: #5cb85c;
@@ -250,6 +259,9 @@
     background-color: #007bff;
     color: #fff;
     border-color: #007bff;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
   }
 
   .step::before {
@@ -288,6 +300,9 @@
     color: #666;
     position: relative;
     margin-top: -60px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
 
   /* Form-felt starter */
@@ -298,6 +313,10 @@
     background: white;
     border-radius: 15px;
     color: #666;
+  }
+
+  #email {
+    padding: 10px 0;
   }
 
   .form-felt {
@@ -346,14 +365,23 @@
   .green_button {
     background-color: #4caf50;
     color: #fff;
-    padding: 10px 20px;
+    padding: 17px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
 
   .green_button:hover {
     background-color: #45a049;
+  }
+
+  ::placeholder {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 200;
+    font-style: normal;
   }
 }
