@@ -34,11 +34,10 @@ button {
   font-size: 1.2rem;
   width: 100%;
   padding: 2rem 2.5rem;
-  /* Removes the box down below */
+  /* Fjerner boksen down below */
   border: none;
   outline: none;
   transition: 0.4s;
-  /* Align text to left and icon to right side*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +69,7 @@ button {
   line-height: 1.4;
 }
 
-/* Frame around the FAQ box */
+/* Ramme rundt FAQ box */
 
 .faq {
   border: 1px solid #000000;
