@@ -22,8 +22,14 @@ a:visited {
   box-sizing: border-box;
 }
 
+@media (max-width: 900px) {
+  .hero_img {
+    padding-top: 35px;
+  }
+}
+
 /* ----------------------------------Desktop--------------------------------- */
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   h1 {
     font-family: "futura-pt", sans-serif;
     font-weight: 300;
