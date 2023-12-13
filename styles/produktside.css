@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 p {
@@ -31,23 +31,22 @@ p {
 }
 
 main {
-    display: block;
+  display: block;
 }
 
-
 .grid_1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .produkt_img1 {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .produktnavn_1 {
@@ -57,49 +56,55 @@ main {
   padding-bottom: 10px;
 }
 
+.produktnavn {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 2px;
+}
+
 .produktfarve {
-    font-size: 1.7rem;
-    font-weight: 500;
-    margin: 2px;
-    padding-bottom: 20px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 2px;
+  padding-bottom: 20px;
 }
 
 .farver {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .pris {
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin: 2px;
-    padding-bottom: 40px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin: 2px;
+  padding-bottom: 40px;
 }
 
-
 .col_2 {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .produktdetaljer {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .produktnavn_1,
 .produktfarve,
 .pris,
 .farver {
-    text-align: left;
-    font-family: "futura-pt", sans-serif;
+  text-align: left;
+  font-family: "futura-pt", sans-serif;
 }
 
 .farver {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 4px;
-  width: 10%;
-  margin: 4px 2px;
+  width: 29%;
+  margin: -33px 2px;
+  padding-bottom: 60px;
 }
 
 /* STØRRELSE */
@@ -120,6 +125,9 @@ button {
   border: 1px solid #ccc;
   padding: 8px 12px;
   cursor: pointer;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 button:hover {
@@ -129,18 +137,18 @@ button:hover {
 /* LÆG I KURV */
 
 .addtocart {
-  display: inline-block; 
-  width: 450px; 
-  height: 40px; 
-  background-color: white; 
+  display: inline-block;
+  width: 450px;
+  height: 40px;
+  background-color: white;
   border: 1px solid #000;
-  margin-right: 5px; 
-  margin-top: 200px;
+  margin-right: 5px;
+  margin-top: 65px;
   font-size: 1.2rem;
 }
 
 .addtocart:hover {
-  background-color: #555655; 
+  background-color: #555655;
 }
 
 /* Produktinfo */
@@ -161,20 +169,18 @@ button:hover {
   transition: 0.4s;
 }
 
-
 .grid_1_1_1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    padding-top: 10px;
-    max-width: 1200px;
-    align-items: flex-start;
-  }
-
-  .produkt_img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
   width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 10px;
+  max-width: 1200px;
+  align-items: flex-start;
 }
 
+.produkt_img {
+  width: 100%;
+}
