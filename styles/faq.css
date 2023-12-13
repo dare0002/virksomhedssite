@@ -6,6 +6,13 @@ body {
   font-style: normal;
 }
 
+.h1{
+  font-family: "futura-pt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+}
+
 button {
   font-family: "futura-pt", sans-serif;
   font-weight: 300;
@@ -50,7 +57,7 @@ button {
 
 .active,
 .accordion:hover {
-  background-color: #a1dfac4a;
+  background-color: #abacab4a;
 }
 
 .panel {
@@ -58,7 +65,7 @@ button {
   background-color: white;
   display: none;
   overflow: hidden;
-  background-color: #a1dfac4a;
+  background-color: #abacab4a;
   /* 0 px for top, 2rem for right, 2.5rem for bottom, 2rem for left side. */
   padding: 0 2rem 2.5rem 2rem;
 }
