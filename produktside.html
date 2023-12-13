@@ -5,10 +5,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produktside</title>
+    <link rel="stylesheet" href="styles/produktside.css">
+
 </head>
 
 <body>
+    <div class="brodkrumme_produkt">
+        <div>
+            <p id="brodkrumme"> FORSIDE / TØJ / ALLE PRODUKTER </p>
+        </div>
+    </div>
 
+    <main>
+        <div class="grid_1_1">
+            <div class="col_1">
+                <img src="billeder/produktside_1.png" alt="tøj" class="produkt_img1">
+            </div>
+            <div class="col_2">
+                <div class="produktdetaljer">
+                    <p class="produktnavn_1">PREMIUM SWEATSHIRT</p>
+                    <p class="produktfarve">SORT</p>
+                    <p class="pris">175 DKK</p>
+                    <div class="farver">
+                        <div>
+                            <iconify-icon icon="material-symbols:lens" style="color: #151f78;"></iconify-icon>
+                        </div>
+                        <div>
+                            <iconify-icon icon="material-symbols:lens" style="color: #ffc6c6;"></iconify-icon>
+                        </div>
+                        <div>
+                            <iconify-icon icon="material-symbols:lens" style="color: #103706;"></iconify-icon>
+                        </div>
+                    </div>
+                    <div class="størrelse">
+                        <p>Vælg din størrelse:</p>
+                        <div class="størrelse_button">
+                            <button>XS</button>
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="addtocart">LÆG I KURV</button> <br><br><br><br>
+
+                <div class="produktinfo">
+                    <button class="accordion" onclick="togglePanel(this)">
+                        BESKRIVELSE
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="panel">
+                        <p> Ansvaret for varer købt hos Jørnæs Productions webshop overgår til dig som forbruger på
+                            leveringstidspunktet.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="produktinfo">
+                    <button class="accordion" onclick="togglePanel(this)">
+                        DETALJER
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="panel">
+                        <p> Alle priser i Jørnæs Productions webshop er inklusive moms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="produktinfo">
+                    <button class="accordion" onclick="togglePanel(this)">
+                        FRAGT OG RETUR
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="panel">
+                        <p> Betalingsmåde er online med kort eller Mobilepay ved bestilling.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="rekomenderet"> PRODUKTER SOM DU MÅSKE SYNES OM</p>
+        <div class="grid_1_1_1_1">
+            <div>
+                <img src="billeder/taske_produktside.png" alt="taske" class="produkt_img">
+                <p class="produktnavn">TASKE
+                <p>
+                <p class="pris">45 DKK</p>
+                <div class="farver">
+                    <div>
+                        <iconify-icon icon="material-symbols:lens"></iconify-icon>
+                    </div>
+                    <div>
+                        <iconify-icon icon="material-symbols:lens" style="color: #ffc6c6;"></iconify-icon>
+                    </div>
+                    <div>
+                        <iconify-icon icon="material-symbols:lens" style="color: #151f78;"></iconify-icon>
+                    </div>
+                    <div>
+                        <p class="plus">+2</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="billeder/hoodie_produktside.png" alt="hoodie" class="produkt_img">
+                <p class="produktnavn">PREMIUM HOODIE</p>
+                <p class="pris">199 DKK</p>
+                <div class="farver">
+                    <div>
+                        <iconify-icon icon="material-symbols:lens"></iconify-icon>
+                    </div>
+                    <div>
+                        <iconify-icon icon="material-symbols:lens" style="color: #ffc6c6;"></iconify-icon>
+                    </div>
+                    <div>
+                        <iconify-icon icon="material-symbols:lens" style="color: #151f78;"></iconify-icon>
+                    </div>
+                    <div>
+                        <p class="plus">+2</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="billeder/pinktshirt_produktside.png" alt="tshirt" class="produkt_img">
+                <p class="produktnavn">FAVOURITE T-SHIRT</p>
+                <p class="pris">79 DKK</p>
+                <div class="farver">
+                    <div>
+                        <iconify-icon icon="material-symbols:lens"></iconify-icon>
+                    </div>
+                    <div>
+                        <iconify-icon icon="material-symbols:lens" style="color: #ffc6c6;"></iconify-icon>
+                    </div>
+                    <div>
+                        <iconify-icon icon="material-symbols:lens" style="color: #151f78;"></iconify-icon>
+                    </div>
+                    <div>
+                        <p class="plus">+2</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="billeder/bukser_produktside.png" alt="bukser" class="produkt_img">
+                <p class="produktnavn">JOGGINGBUKSER</p>
+                <p class="pris">199 DKK</p>
+                <div class="farver">
+                    <div>
+                        <iconify-icon icon="material-symbols:lens"></iconify-icon>
+                    </div>
+                    <div>
+                        <iconify-icon icon="material-symbols:lens" style="color: #ffc6c6;"></iconify-icon>
+                    </div>
+                    <div>
+                        <iconify-icon icon="material-symbols:lens" style="color: #151f78;"></iconify-icon>
+                    </div>
+                    <div>
+                        <p class="plus">+2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="javascript/produktside.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>
