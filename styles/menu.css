@@ -138,7 +138,7 @@
   margin-bottom: 5px;
 }
 
-h3 {
+.h3_menu {
   font-size: 1rem;
 }
 
@@ -218,7 +218,7 @@ a {
 }
 
 /* Vis burgermenuen ved max-bredde (mobilvisning) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .navbar {
     display: none;
   }
@@ -239,9 +239,17 @@ a {
     cursor: pointer;
   }
 
+  #cart_burger {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 93%;
+    top: 5.5%;
+  }
+
   #logo_burger {
     position: absolute;
-    left: 46%;
+    left: 44%;
+    width: 50px;
   }
 
   .navbar2 {
