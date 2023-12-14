@@ -201,9 +201,9 @@
     border-color: #5cb85c;
   }
   .step.active {
-    background-color: #007bff;
+    background-color: #4caf50;
     color: #fff;
-    border-color: #007bff;
+    border-color: #4caf50;
     width: 70px;
     height: 70px;
     border-radius: 100%;
