@@ -68,6 +68,7 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   width: 100%;
+  padding-bottom: 90px;
 }
 
 .brodkrumme_web {
@@ -104,5 +105,6 @@ p {
     gap: 20px;
     width: 100%;
     padding: 1px 20px;
+    padding-bottom: 110px;
   }
 }
