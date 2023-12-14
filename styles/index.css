@@ -38,10 +38,19 @@ a:visited {
   img {
     width: 100%;
   }
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 5rem;
+  }
   .grid_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0;
+    margin-bottom: -0.4rem;
     overflow: hidden;
   }
   .hero_txt {
@@ -279,10 +288,9 @@ a:visited {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    /* height: 100%; */
     margin: 0;
-    /* margin-bottom: 1rem; */
     overflow: auto;
+    margin-bottom: -0.4rem;
   }
 
   .grid_1_1 img {
@@ -319,6 +327,14 @@ a:visited {
   .shop:hover {
     background-color: rgba(219, 224, 226);
     color: #7da570;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 5rem;
   }
   /* --------carousel mobil----------- */
   .bestsellers {

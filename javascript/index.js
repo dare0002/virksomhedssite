@@ -58,6 +58,12 @@ function skjulTekst() {
   // Tildel tom streng til værdien af mail-inputfeltet
   mailInput.value = "";
 }
+// Video
+document.addEventListener("DOMContentLoaded", function () {
+  var video = document.getElementById("http://victoriamarkussen.dk/kea/05_indhold/virksomhedsvideo1.mp4");
+  video.play();
+});
+
 // LOGIN
 class Login extends HTMLElement {
   constructor() {
