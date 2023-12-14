@@ -302,7 +302,7 @@ a:visited {
   .hero_txt {
     font-size: 15px;
     position: absolute; /* Positioned absolutely */
-    top: 370px; /*Adjusted from margin-top to center vertically */
+    top: 700px; /*Adjusted from margin-top to center vertically */
     margin-left: 3.5rem;
     /* transform: translateY(-10%); Center vertically */
     color: white;
@@ -313,7 +313,7 @@ a:visited {
   .shop {
     font-size: 11px;
     position: absolute; /* Positioned absolutely */
-    top: 400px; /* Adjusted from margin-top to center vertically */
+    top: 730px; /* Adjusted from margin-top to center vertically */
     /* transform: translateY(5%); Center vertically */
     color: white;
     font-family: "futura-pt";
@@ -333,15 +333,16 @@ a:visited {
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 0;
+    margin-top: 2.5rem;
     padding-top: 0;
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
   }
   /* --------carousel mobil----------- */
   .bestsellers {
     margin-left: 1rem;
     font-family: "futura-pt";
     margin-bottom: 1rem;
+    margin-top: 2rem;
   }
   .carousel-container {
     position: relative;
