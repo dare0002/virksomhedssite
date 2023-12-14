@@ -7,6 +7,7 @@
     <title>Forside</title>
 
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="https://use.typekit.net/alu1hko.css">
     <link rel="stylesheet" href="styles/generel.css">
 
@@ -14,6 +15,105 @@
 
 <body>
     <header>
+
+        <!-- ØVERSTE BAR -->
+        <div class="header_text">
+            <p class="header_text">FRI FRAGT VED KØB OVER 400KR. | GRATIS RETUR | PAKKER SENDES INDEN FOR 4-8 DAGE </p>
+        </div>
+
+        <!-- MENU -->
+        <nav class="navbar">
+            <ul class="left-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-link">Shop</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-column">
+                            <h3>NYHEDER</h3>
+                            <a href="produktoversigt.html">Alle Produkter</a>
+                            <a href="#">Nyheder</a>
+                            <a href="#">Populære styles</a>
+                            <a href="#">Gavekort</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3>TØJ</h3>
+                            <a href="produktoversigt.html">Alle Produkter</a>
+                            <a href="#">T-shirts</a>
+                            <a href="#">Sweatshirts</a>
+                            <a href="#">Sweatpants & Shorts</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3>ACCESORIES</h3>
+                            <a href="#">Alle Produkter</a>
+                            <a href="#">Kasketter & Huer</a>
+                            <a href="#">Tørklæder & Handsker</a>
+                            <a href="#">Tasker</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3>BØRNETØJ</h3>
+                            <a href="#">Alle Produkter</a>
+                            <a href="#">T-shirts</a>
+                            <a href="#">Sweatshirts</a>
+                            <a href="#">Sweatpants & Shorts</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <img src="billeder/blaa_sweat.png" alt="tøj" class="menu_img">
+                        </div>
+                        <div class="dropdown-column">
+                            <img src="billeder/net.png" alt="tøj" class="menu_img">
+                        </div>
+
+
+                    </div>
+                </li>
+                <li><a href="#">Information</a></li>
+                <li><a href="omos.html">Om os</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="logo">
+                <a href="index.html"><img src="billeder/jørnæs_logo.svg" alt="Logo"></a>
+            </div>
+            <div class="right-menu">
+                <div class="icon">
+                    <a href="" class="icon"><iconify-icon icon="iconamoon:search-thin"></iconify-icon></a>
+                </div>
+                <div class="icon">
+                    <a href="" class="icon"> <iconify-icon icon="ph:heart-thin"></iconify-icon></a>
+                </div>
+                <div class="icon">
+                    <a href="checkout.html" class="icon" id="cart"><iconify-icon
+                            icon="ph:shopping-cart-thin"></iconify-icon></a>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- BURGERMENU -->
+        <nav class="navbar2">
+            <div id="burger-menu" class="flex_item1">
+                <div class="burger-icon">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+            <ul class="menu-links">
+                <li><a href="produktoversigt.html">Shop</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="omos.html">Om os</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="flex_item">
+                <a href="index.html"><img src="billeder/jørnæs_logo.svg" alt="Logo" id="logo_burger"></a>
+            </div>
+            <div class="flex_item">
+                <div class="cart-icon">
+                    <a href="checkout.html" class="cart-icon" id="cart_burger"> <iconify-icon
+                            icon="ph:shopping-cart-thin"></iconify-icon> </a>
+                </div>
+            </div>
+        </nav>
 
     </header>
     <main>
@@ -51,20 +151,15 @@
                     <img src="billeder/blå_carousel.png" alt="5">
                 </div>
                 <div class="carousel-slide">
+                    <img src="billeder/outfit_check.png" alt="2">
+                </div>
+                <div class="carousel-slide">
                     <img src="billeder/line_bagfra.png" alt="1">
                 </div>
                 <div class="carousel-slide">
                     <img src="billeder/cykel1.png" alt="2">
                 </div>
-                <div class="carousel-slide">
-                    <img src="billeder/cykel1.png" alt="2">
-                </div>
-                <div class="carousel-slide">
-                    <img src="billeder/cykel1.png" alt="2">
-                </div>
-                <div class="carousel-slide">
-                    <img src="billeder/cykel1.png" alt="2">
-                </div>
+
             </div>
             <button class="custom-btn prev-btn">
                 <span class="arrow">&#8592;</span>
@@ -193,7 +288,7 @@
                             JØRNÆS PRODUCTIONS
                         </h4>
                     </li>
-                    <li>Om os</li>
+                    <li> <a href="omos.html"></a>Om os</li>
                     <li>Trykkeri</li>
                     <li>Job</li>
                 </ul>
@@ -288,7 +383,7 @@
                     <li>
                         <h4>KUNDESERVICE</h4>
                     </li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li>FAQ</li>
 
                     <li>Kontakt os</li>
                     <li>Levering</li>
@@ -325,6 +420,9 @@
         </div>
 
     </footer>
+
+    <script src="javascript/menu.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>
