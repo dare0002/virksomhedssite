@@ -11,186 +11,186 @@ p {
 
 /* ----------------------------------Mobil--------------------------------- */
 
-
-
-
 /* ----------------------------------Desktop--------------------------------- */
 
 @media (min-width: 800px) {
+  #brodkrumme {
+    padding: 120px;
+    padding-top: 20px;
+    position: absolute;
+    margin-top: 3.5px;
+  }
 
-#brodkrumme {
-  padding: 120px;
-  padding-top: 20px;
-  position: absolute;
-  margin-top: 3.5px;
+  .brodkrumme_produkt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px 2px;
+    justify-content: end;
+  }
+
+  .rekomenderet {
+    padding: 120px;
+    padding-top: 50px;
+    padding-bottom: 2px;
+    max-width: 1200px;
+  }
+
+  main {
+    display: block;
+  }
+
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .produkt_img1 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .produktnavn_1 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin: 2px;
+    padding-bottom: 10px;
+  }
+
+  .produktnavn {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 2px;
+  }
+
+  .produktfarve {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 2px;
+    padding-bottom: 20px;
+  }
+
+  .farver {
+    padding-bottom: 30px;
+  }
+
+  .pris {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 2px;
+    padding-bottom: 40px;
+  }
+
+  .col_2 {
+    margin-left: 5px;
+  }
+
+  .produktdetaljer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .produktnavn_1,
+  .produktfarve,
+  .pris,
+  .farver {
+    text-align: left;
+    font-family: "futura-pt", sans-serif;
+  }
+
+  .farver {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    width: 29%;
+    margin: -33px 2px;
+    padding-bottom: 60px;
+  }
+
+  /* STØRRELSE */
+
+  .størrelse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .størrelse_button {
+    display: flex;
+    gap: 8px;
+  }
+
+  button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  button:hover {
+    background-color: #f2f2f2;
+  }
+
+  /* LÆG I KURV */
+
+  .addtocart {
+    display: inline-block;
+    width: 450px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #000;
+    margin-right: 5px;
+    margin-top: 65px;
+    font-size: 1.2rem;
+    transition: 0.4s;
+  }
+
+  .addtocart:hover {
+    background-color: #555655;
+  }
+
+  /* Produktinfo */
+
+  .panel {
+    display: none;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .accordion {
+    cursor: pointer;
+    padding: 10px;
+    width: 450px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .grid_1_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 10px;
+    max-width: 1200px;
+    align-items: flex-start;
+  }
+
+  .produkt_img {
+    width: 100%;
+  }
 }
-
-.brodkrumme_produkt {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 25px 2px;
-  justify-content: end;
-}
-
-.rekomenderet {
-  padding: 120px;
-  padding-top: 50px;
-  padding-bottom: 2px;
-  max-width: 1200px;
-}
-
-main {
-  display: block;
-}
-
-.grid_1_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.produkt_img1 {
-  max-width: 100%;
-  height: auto;
-}
-
-.produktnavn_1 {
-  font-size: 2.3rem;
-  font-weight: 500;
-  margin: 2px;
-  padding-bottom: 10px;
-}
-
-.produktnavn {
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 2px;
-}
-
-.produktfarve {
-  font-size: 1.7rem;
-  font-weight: 500;
-  margin: 2px;
-  padding-bottom: 20px;
-}
-
-.farver {
-  padding-bottom: 30px;
-}
-
-.pris {
-  font-size: 0.8rem;
-  font-weight: 300;
-  margin: 2px;
-  padding-bottom: 40px;
-}
-
-.col_2 {
-  margin-left: 5px;
-}
-
-.produktdetaljer {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.produktnavn_1,
-.produktfarve,
-.pris,
-.farver {
-  text-align: left;
-  font-family: "futura-pt", sans-serif;
-}
-
-.farver {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 4px;
-  width: 29%;
-  margin: -33px 2px;
-  padding-bottom: 60px;
-}
-
-/* STØRRELSE */
-
-.størrelse {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.størrelse_button {
-  display: flex;
-  gap: 8px;
-}
-
-button {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #f2f2f2;
-}
-
-/* LÆG I KURV */
-
-.addtocart {
-  display: inline-block;
-  width: 450px;
-  height: 40px;
-  background-color: white;
-  border: 1px solid #000;
-  margin-right: 5px;
-  margin-top: 65px;
-  font-size: 1.2rem;
-  transition: 0.4s;
-}
-
-.addtocart:hover {
-  background-color: #555655;
-}
-
-/* Produktinfo */
-
-.panel {
-  display: none;
-  padding: 10px;
-  overflow: hidden;
-}
-
-.accordion {
-  cursor: pointer;
-  padding: 10px;
-  width: 450px; 
-  border: none;
-  text-align: left;
-  outline: none;
-  transition: 0.4s;
-  display: flex;
-  justify-content: space-between;
-}
-
-.grid_1_1_1_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  padding-top: 10px;
-  max-width: 1200px;
-  align-items: flex-start;
-}
-
-.produkt_img {
-  width: 100%;
-}
-
