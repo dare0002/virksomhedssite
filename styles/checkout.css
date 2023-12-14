@@ -3,37 +3,8 @@
   box-sizing: border-box;
 }
 
- h3 {
-    font-family: "futura-pt", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 2rem;
-  }
-
-   h5 {
-    font-family: "futura-pt", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1rem;
-  }
-
-  h6 {
-    font-family: "futura-pt", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-
-  .login-text #log-in {
-    font-weight: bold;
-    color: black;
-    cursor: pointer;
-  }
-
-
-
 /* ----------------------------------Mobil--------------------------------- */
 @media (max-width: 768px) {
- 
   .kvadrat::before {
     content: "";
     display: inline-block;
@@ -68,7 +39,7 @@
     font-weight: 300;
     font-style: normal;
   }
- 
+
   .step.active {
     background-color: #b0b2b4;
     color: #fff;
@@ -206,8 +177,74 @@
   }
 
   /* 1,2,3 step starter */
-
   .step-indicator {
+    display: flex;
+    justify-content: center;
+    /* margin: 20px 0; */
+    font-size: 2.3rem;
+    margin-left: 10%;
+  }
+
+  .step {
+    /* flex-grow: 1; */
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-right: 100px;
+    font-family: "futura-pt";
+  }
+  .step.completed {
+    color: #5cb85c;
+    border-color: #5cb85c;
+  }
+  .step.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-right: 80px;
+  }
+
+  .step::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    /* width: 50px;
+  height: 50px; */
+    background-color: #ddd;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+
+  #step2 {
+    margin-right: 80px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+  }
+  #step3 {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+  }
+
+  .step.active::before,
+  .step.completed::before {
+    background-color: #007bff;
+  }
+
+  .step-content {
+    text-align: left;
+    margin-top: 0px;
+  }
+
+  /* .step-indicator {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
@@ -225,28 +262,51 @@
     font-weight: 300;
     font-style: normal;
   }
-
+  .step.completed {
+    color: #5cb85c;
+    border-color: #5cb85c;
+  }
   .step.active {
-    background-color: #b0b2b4;
+    background-color: #007bff;
     color: #fff;
-    border-color: #b0b2b4;
+    border-color: #007bff;
     font-family: "futura-pt", sans-serif;
     font-weight: 300;
     font-style: normal;
   }
 
+  .step::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+
+  .step.active::before,
+  .step.completed::before {
+    background-color: #dbdde0;
+  }
+
   .step-content {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
     text-align: left;
     margin-top: 0px;
   }
+/*  */
+  .step-content {
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 20px 0;
+  }
 
-  .step_text {
+  .step_text1 {
     flex-grow: 1;
     text-align: center;
-    padding: 5px;
+    /* padding: 1px; */
     background-color: #fff;
     color: #666;
     position: relative;
@@ -254,6 +314,33 @@
     font-family: "futura-pt", sans-serif;
     font-weight: 500;
     font-style: normal;
+    margin-left: 8rem;
+  }
+  .step_text2 {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1px;
+    background-color: #fff;
+    color: #666;
+    position: relative;
+    margin-top: -60px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 10px;
+  }
+  .step_text3 {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1px;
+    background-color: #fff;
+    color: #666;
+    position: relative;
+    margin-top: -60px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-right: 11rem;
   }
 
   /* Form-felt starter */
