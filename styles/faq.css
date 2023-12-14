@@ -57,7 +57,7 @@ button {
 
 .active,
 .accordion:hover {
-  background-color: #abacab4a;
+  background-color: #afdbaf4a;
 }
 
 .panel {
@@ -65,7 +65,7 @@ button {
   background-color: white;
   display: none;
   overflow: hidden;
-  background-color: #abacab4a;
+  background-color: #afdbaf4a;
   /* 0 px for top, 2rem for right, 2.5rem for bottom, 2rem for left side. */
   padding: 0 2rem 2.5rem 2rem;
 }
